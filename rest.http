@@ -1,0 +1,93 @@
+###Post Employee
+POST http://localhost:3000/employee_details
+Content-Type: application/json
+
+{
+  "fName": "Aillen",
+  "mName": "Dalondondn",
+  "lName": "Gonzaga",
+  "age": 21,
+  "address": "Bulua",
+  "birthday": "2002-05-21",
+  "vaccinated": true
+}
+
+###Get all Employee
+GET http://localhost:3000/employee_details
+
+###Get Employee by ID
+GET http://localhost:3000/employee_details/
+
+###Patch Employee by ID
+PATCH http://localhost:3000/employee_details/
+Content-Type: application/json
+
+{
+  "fName": "Tynah",
+  "mName": "A",
+  "lName": "Macarate",
+  "age": 21,
+  "address": "Opol",
+  "birthday": "2002-08-20",
+  "vaccinated": false
+}
+
+###Delete Employee by ID
+DELETE http://localhost:3000/employee_details/
+
+###Post Phone Inventory
+POST http://localhost:3000/phone_inventory
+Content-Type: application/json
+
+{
+  "phoneBrand": "Iphone 11",
+  "phoneQuantity": 100,
+  "dateChecked": "2021-05-15"
+}
+
+###Get all Phone Inventory
+GET http://localhost:3000/phone_inventory
+
+###Get by Phone Inventory ID
+GET http://localhost:3000/phone_inventory/
+
+###Patch Phone Inventory by ID
+PATCH http://localhost:3000/phone_inventory/
+Content-Type: application/json
+
+{
+  "phoneQuantity": "50"
+}
+
+###Delete Phone Inventory by ID
+DELETE http://localhost:3000/phone_inventory/
+
+###Post Inventory
+POST http://localhost:3000/inventory
+Content-Type: application/json
+
+{
+  "phoneBrand": "Cherry Mobile",
+  "quantity": 9000,
+  "dateChecked": "2021-05-15",
+  "checkby": "Staff",
+  "dateCreated": "2019-10-10"
+}
+
+###Get all Inventory
+GET http://localhost:3000/inventory
+
+###Get by Inventory ID
+GET http://localhost:3000/inventory/
+
+###Patch Inventory by ID
+PATCH http://localhost:3000/inventory/
+Content-Type: application/json
+
+{
+  "quantity": "899"
+}
+
+###Delete Inventory by ID
+DELETE http://localhost:3000/inventory/
+
